@@ -1,17 +1,16 @@
-// Sum of First and Last digit
-let a = prompt("Enter a Number : ")
+let n = Number(prompt("Enter a Number : "))
 
-let b = Array.from(a)
+let last = n % 10;
 
-let c = b.map((element)=> {return Number(element)})
+let e = n
 
-let d = 0;
+let sum = 0;
 
-for(let i = 1; i <= c.length; i++)
-{   
-    if(i == 1 || i == c.length)
-    {
-        d = d + i
-    }
+while(e >= 10)
+{
+    e = Math.floor(e /= 10)
 }
-console.log(d)
+
+let first = e;
+sum = first + last;
+console.log(sum)

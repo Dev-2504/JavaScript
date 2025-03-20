@@ -1,15 +1,13 @@
-// Sum of All Number
-let a = prompt("Enter a Number : ")
+let n = Number(prompt("Enter a Number : "))
 
-let b = Array.from(a)
+let sum = 0;
 
-let c = b.map((element)=> {return Number(element)})
-
-let d = 0;
-
-for(let i of c)
+while(n !== 0)
 {
-    d = d + i
+    let last = n % 10;
+    sum = sum + last;
+    
+    n = Math.floor(n / 10)
 }
 
-console.log(d)
+console.log(sum)
