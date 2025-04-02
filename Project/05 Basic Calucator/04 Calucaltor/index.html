@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04 Calucator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cal">
+        <div class="input">
+            <input type="number" id="first" class="field" placeholder="Enter a value">
+            <input type="number" id="second" class="field" placeholder="Enter a value">
+        </div>
+        <div>
+            <div class="form">
+                <button onclick="add()" class="btn">+</button>
+                <button onclick="suc()" class="btn">-</button>
+            </div>
+            <div class="form">
+                <button onclick="mul()" class="btn">*</button>
+                <button onclick="div()" class="btn">/</button>
+            </div>
+        </div>
+        <div>
+            <p id="result">Result</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

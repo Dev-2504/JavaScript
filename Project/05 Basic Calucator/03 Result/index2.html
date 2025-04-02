@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 Result</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Maths</td>
+            <td><input type="number" id="Maths" min="0" max="100" onchange="validateInput(this)"></td>
+        </tr>
+        <tr>
+            <td>English</td>    
+            <td><input type="number" id="English" min="0" max="100" oninput="validateInput(this)"></td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td><input type="number" id="Science" min="0" max="100" oninput="validateInput(this)"></td>
+        </tr>
+        <tr>
+            <td>Social Science</td>
+            <td><input type="number" id="Social_Science" min="0" max="100" oninput="validateInput(this)"></td>
+        </tr>
+        <tr>
+            <td>Hindi</td>
+            <td><input type="number" id="Hindi" min="0" max="100" oninput="validateInput(this)"></td>
+        </tr>
+        <tr>
+            <td>Computer</td>
+            <td><input type="number" id="Computer" min="0" max="100" oninput="validateInput(this)"></td>
+        </tr>
+        <tr>
+            <td><button onclick="add()">TOTAL</button></td>
+            <td><p id="total"></p></td>
+        </tr>
+        <tr>
+            <td><button onclick="pec()">PERCENTAGE</button></td>
+            <td><p id="pec"></p></td>
+        </tr>
+    </table>
+
+    <script>
+        function validateInput(input) {
+            if (input.value > 100) {
+                input.value = 100;
+            } else if (input.value < 0) {
+                input.value = 0;
+            }
+
+            console.log("Hello")
+        }
+
+        function add() {
+            let subjects = ["Maths", "English", "Science", "Social_Science", "Hindi", "Computer"];
+            let total = 0;
+            subjects.forEach(sub => {
+                total += Number(document.getElementById(sub).value) || 0;
+            });
+            document.getElementById("total").innerText = total;
+        }
+
+        function pec() {
+            let total = Number(document.getElementById("total").innerText) || 0;
+            let percentage = (total / 600) * 100;
+            document.getElementById("pec").innerText = percentage.toFixed(2) + "%";
+        }
+    </script>
+</body>
+</html>
