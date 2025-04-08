@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main{
+        width: 60%;
+        height: 500px;
+        margin: auto;
+        margin-top: 100px;
+        box-shadow: 0px 0px 3px gray;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: 1s;
+    }
+
+    img{
+        width: 1000px;
+        height: 500px;
+    }
+
+    .btn{
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .btn button{
+        padding: 5px;
+        width: 80px;
+    }
+    
+</style>
+<body>
+    <main>
+        <img class="slide" src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg" alt="">
+        <img class="slide" src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-css/sta-je-css.png" alt="">
+        <img class="slide" src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-javascript/sta-je-javascript.jpg" alt="">
+        <img class="slide" src="https://www.guvi.in/blog/wp-content/uploads/2024/05/1-1.webp" alt="">
+    </main>
+    <div class="btn">
+        <button onclick="prev()">Previous</button>
+        <button onclick="next()">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
