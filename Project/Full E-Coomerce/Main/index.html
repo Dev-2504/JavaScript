@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <!-- Tailwind Css Cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Font Cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Custom Css -->
+     <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+    <div class="h-screen w-full flex flex-col">
+        <!-- Navbar -->
+        <div class="w-full h-35">
+            <!-- First Navbar -->
+             <div class="h-18 w-full px-48 flex items-center justify-between" id="First_Navbar">
+                <!-- First Left Logo -->
+                 <div class="h-10 w-40 flex items-center">
+                    <img src="Logo.svg" alt="" height="auto" width="100%">
+                 </div>
+                 <!-- First Right Content -->
+                <div class="h-15 w-110 flex items-center justify-between">
+                    <!-- Search Bar -->
+                    <div class="w-70 h-10 p-[10px] rounded flex items-center justify-between" id="searchbar">
+                        <div class="mr-[10px]"><img src="./Icon/iconoir--search.svg" alt=""></div>
+                        <div class="w-full"><input type="text" placeholder="Searc by products" oninput="show()" id="search_input"  class="w-full inputt text-xs"></div>
+                        <div class="ml-[10px]" onclick="cross()" ><img src="./Icon/oui--cross (1).svg" style="visibility: hidden; opacity: 0;" alt="" id="search_cross"></div>
+                    </div>
+                    <!-- Line -->
+                    <div class="h-6 w-[1px] rounded Line"></div>
+                    <!-- Login -->
+                     <a href="" class="text-xs">LOGIN</a>
+                    <!-- Like -->
+                    <div><img src="./Icon/Wishlist.svg" alt=""></div>
+                     <!-- Add To Cart -->
+                    <div><img src="./Icon/add_to_cart.svg" alt="" onclick="add_cart()" id="icon_main" style="cursor: pointer;"></div>
+                </div>
+             </div>
+            <!-- Second Navbar -->
+            <div class="h-17 flex items-center" id="Second_Navbar">
+                <ul class="flex items-center w-full">
+                    <li class="ml-[30px] cursor-pointer" onclick="allData()">All</li>
+                    <li class="ml-[30px]" onclick="Men()">Men</li>
+                    <li class="ml-[30px]" onclick="Women()">Women</li>
+                    <li class="ml-[30px]" onclick="add()">Children</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        
+        <!-- Content -->
+        <div id="Content">
+            <!-- Card -->
+            <!-- <div style="height: 500px;" class="Card"> -->
+                <!-- Card Image -->
+                <!-- <div class="card_img"></div> -->
+                <!-- Card Content -->
+                <!-- <div class="card_content">
+                    <p class="card_title">Bewakoof <span><img src="./Icon/Wishlist.svg" alt="" height="20px" width="20px"></span></p>
+                    <p class="card_des">Men's Black Batman Outline Logo Graphic</p>
+                    <p class="card_price"><span class="card_act_price">₹699</span><del class="card_price_des">₹1299</del> <span class="card_price_per">50%OFF</span></p>
+                </div>
+            </div> -->
+            <!-- Card Complete -->
+
+            
+        </div>
+    </div>
+
+        <!-- Java Script -->
+       <script src="script3.js"></script>
+</body>
+</html>

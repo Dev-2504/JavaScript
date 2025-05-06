@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.Main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1fr,4);
+    gap: 10px;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+}
