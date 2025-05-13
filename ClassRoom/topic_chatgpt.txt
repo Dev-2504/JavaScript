@@ -1,4 +1,5 @@
 🔰 Basics
+
 Introduction to JavaScript
 
 How JavaScript Works
@@ -13,14 +14,20 @@ Comments
 
 Type Conversion & Coercion
 
+----------------------------------------------------------------------------------------------------
+
 🔁 Control Flow
+
 If, else if, else
 
 Switch Statement
 
 Ternary Operator
 
+----------------------------------------------------------------------------------------------------
+
 🔄 Loops
+
 For Loop
 
 While Loop
@@ -29,7 +36,10 @@ Do...While Loop
 
 Break and Continue
 
+----------------------------------------------------------------------------------------------------
+
 🧰 Functions
+
 Function Declaration
 
 Function Expression
@@ -44,7 +54,10 @@ Default Parameters
 
 Rest & Spread Operator
 
+----------------------------------------------------------------------------------------------------
+
 📦 Arrays
+
 Creating Arrays
 
 Accessing Elements
@@ -63,7 +76,10 @@ sort(), reverse()
 
 Multidimensional Arrays
 
-📘 Objects
+----------------------------------------------------------------------------------------------------
+
+📘 Objects --|
+
 Object Literals
 
 Accessing Properties (dot/bracket notation)
@@ -82,7 +98,10 @@ Object.assign()
 
 Object.keys(), values(), entries()
 
+----------------------------------------------------------------------------------------------------
+
 🧠 Advanced JavaScript
+
 Closures
 
 Hoisting
@@ -111,7 +130,10 @@ Currying
 
 Debouncing & Throttling
 
+----------------------------------------------------------------------------------------------------
+
 📄 DOM Manipulation
+
 What is the DOM?
 
 Selecting Elements (getElementById, querySelector, etc.)
@@ -122,7 +144,10 @@ Creating, Appending, Removing Elements
 
 ClassList, Attributes
 
+----------------------------------------------------------------------------------------------------
+
 🎯 Events
+
 addEventListener
 
 Event Object
@@ -133,7 +158,10 @@ Event Bubbling & Capturing
 
 Event Delegation
 
+----------------------------------------------------------------------------------------------------
+
 🔐 Error Handling
+
 try...catch
 
 finally
@@ -142,7 +170,10 @@ throw
 
 Custom Errors
 
+----------------------------------------------------------------------------------------------------
+
 📦 JavaScript in Browser
+
 BOM (Browser Object Model)
 
 window, document
@@ -151,7 +182,10 @@ alert, confirm, prompt
 
 Location, History, Navigator
 
+----------------------------------------------------------------------------------------------------
+
 🛠️ ES6+ Features
+
 let, const
 
 Arrow Functions
@@ -170,7 +204,10 @@ Optional Chaining
 
 Nullish Coalescing
 
+----------------------------------------------------------------------------------------------------
+
 🧬 OOP in JavaScript
+
 Constructor Functions
 
 Prototypes
@@ -185,7 +222,10 @@ Polymorphism
 
 Static Methods
 
+----------------------------------------------------------------------------------------------------
+
 📡 APIs & JSON
+
 What is JSON?
 
 JSON.stringify(), JSON.parse()
@@ -196,7 +236,10 @@ AJAX (XMLHttpRequest)
 
 Working with APIs (GET, POST, etc.)
 
+----------------------------------------------------------------------------------------------------
+
 🧪 Testing & Debugging
+
 console.log(), console.table(), etc.
 
 Breakpoints
@@ -205,7 +248,10 @@ Debugger Tool
 
 Writing Test Cases (basics)
 
+----------------------------------------------------------------------------------------------------
+
 🔌 Miscellaneous
+
 LocalStorage / SessionStorage
 
 Date & Time
@@ -222,3 +268,4 @@ Set & Map
 
 Memory Management
 
+----------------------------------------------------------------------------------------------------
