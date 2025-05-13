@@ -1,0 +1,224 @@
+🔰 Basics
+Introduction to JavaScript
+
+How JavaScript Works
+
+Variables (var, let, const)
+
+Data Types
+
+Operators (Arithmetic, Assignment, Comparison, Logical, Bitwise)
+
+Comments
+
+Type Conversion & Coercion
+
+🔁 Control Flow
+If, else if, else
+
+Switch Statement
+
+Ternary Operator
+
+🔄 Loops
+For Loop
+
+While Loop
+
+Do...While Loop
+
+Break and Continue
+
+🧰 Functions
+Function Declaration
+
+Function Expression
+
+Arrow Functions
+
+Parameters vs Arguments
+
+Return Statement
+
+Default Parameters
+
+Rest & Spread Operator
+
+📦 Arrays
+Creating Arrays
+
+Accessing Elements
+
+Array Methods:
+
+push(), pop(), shift(), unshift()
+
+forEach(), map(), filter(), reduce()
+
+find(), findIndex(), some(), every()
+
+includes(), indexOf(), splice(), slice(), concat(), join(), flat()
+
+sort(), reverse()
+
+Multidimensional Arrays
+
+📘 Objects
+Object Literals
+
+Accessing Properties (dot/bracket notation)
+
+Adding/Deleting Properties
+
+Object Methods
+
+this Keyword
+
+Object Destructuring
+
+Nested Objects
+
+Object.assign()
+
+Object.keys(), values(), entries()
+
+🧠 Advanced JavaScript
+Closures
+
+Hoisting
+
+Scope (Block, Function, Global)
+
+Lexical Scope
+
+Execution Context
+
+Call Stack
+
+Event Loop
+
+Callback Functions
+
+Promises
+
+async / await
+
+setTimeout, setInterval
+
+Higher-Order Functions
+
+Currying
+
+Debouncing & Throttling
+
+📄 DOM Manipulation
+What is the DOM?
+
+Selecting Elements (getElementById, querySelector, etc.)
+
+Changing Text, HTML, Styles
+
+Creating, Appending, Removing Elements
+
+ClassList, Attributes
+
+🎯 Events
+addEventListener
+
+Event Object
+
+Event Types (click, submit, mouseover, keyup, etc.)
+
+Event Bubbling & Capturing
+
+Event Delegation
+
+🔐 Error Handling
+try...catch
+
+finally
+
+throw
+
+Custom Errors
+
+📦 JavaScript in Browser
+BOM (Browser Object Model)
+
+window, document
+
+alert, confirm, prompt
+
+Location, History, Navigator
+
+🛠️ ES6+ Features
+let, const
+
+Arrow Functions
+
+Template Literals
+
+Destructuring
+
+Spread and Rest
+
+Modules (import/export)
+
+Default Parameters
+
+Optional Chaining
+
+Nullish Coalescing
+
+🧬 OOP in JavaScript
+Constructor Functions
+
+Prototypes
+
+Inheritance
+
+Classes (ES6)
+
+Encapsulation
+
+Polymorphism
+
+Static Methods
+
+📡 APIs & JSON
+What is JSON?
+
+JSON.stringify(), JSON.parse()
+
+Fetch API
+
+AJAX (XMLHttpRequest)
+
+Working with APIs (GET, POST, etc.)
+
+🧪 Testing & Debugging
+console.log(), console.table(), etc.
+
+Breakpoints
+
+Debugger Tool
+
+Writing Test Cases (basics)
+
+🔌 Miscellaneous
+LocalStorage / SessionStorage
+
+Date & Time
+
+Math Object
+
+RegEx (Regular Expressions)
+
+Generators & Iterators
+
+Symbols
+
+Set & Map
+
+Memory Management
+

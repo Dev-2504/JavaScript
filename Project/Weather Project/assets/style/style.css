@@ -1,0 +1,256 @@
+* {
+    /* border: 1px solid white; */
+    font-family: "Inter", sans-serif
+}
+
+.weather {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 150px;
+    background-color: black;
+    display: flex;
+}
+
+.weather_sidebar {
+    width: 10%;
+}
+
+.weather_second {
+    width: 100%;
+}
+
+.weather_navbar {
+    height: 10%;
+}
+
+.weather_content {
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 0.10fr 1fr;
+    grid-template-rows: 1fr 0.20fr 1fr;
+    gap: 15px;
+}
+
+.weather_all_content {
+    background-color: #1E1E1E;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.weather_location {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.weather_today_highlight {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
+
+.weather_other_countries {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+.weather_forecast {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+}
+
+
+
+
+/* Weather Navbar */
+.weather_navbar {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+}
+
+.weather_navbar_detail {
+    /* border: 1px solid white; */
+}
+
+.weather_navbar_right_box {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    width: 500px;
+    /* border: 1px solid white; */
+}
+
+.weather_navbar_search_box {
+    height: 50px;
+    width: 300px;
+    background-color: #1E1E1E;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: #5E5E5E;
+}
+
+.weatehr_navbar_profile_box {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Weather location Box */
+
+.weather_location_first {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;   
+}
+
+.weather_location_detail {
+    height: 40px;
+    min-width: 100px;
+    max-width: auto;
+    padding: 10px 15px;
+    background-color: #363636;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.weather_location_unit {
+    height: 40px;
+    width: 60px;
+    padding: 10px 10px;
+    background-color: #363636;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+
+.weather_location_second {
+    position: relative;
+    height: 80%;
+}
+
+.weather_location_time {
+    position: absolute;
+    color: white;
+}
+
+.weather_location_image {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,20%);
+    height: 140px;
+    width: 140px;
+    /* border: 1px solid white; */
+}
+
+.weather_location_temp {
+    position: absolute;
+    right: 0;
+    transform: translate(0,25px);
+    width: 120px;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+}
+
+
+
+/* Weather Today Hightlight */
+
+.weather_highlight_content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr) 1.70fr;
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    height: 82%;
+}
+
+.weather_highlight_common {
+    background-color: #272727;
+    border-radius: 15px;
+    padding:  10px 12px;
+}
+
+.weather_highlight_wind {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* border: 1px solid white; */
+}
+
+.weather_highlight_sunrise {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+
+
+/* Weather County */
+
+.weather_other_countries_heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather_other_countries_content {
+    height: 85%;
+    width: 100%;
+    overflow: auto;
+}
+
+.weather_content_box {
+    width: 100%;
+    height: 110px;
+    background-color: #272727;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.weather_other_countries_content::-webkit-scrollbar {
+    display: none;
+}
+
+/* Forecast */
+
+.weather_forecast_content {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    overflow: auto;
+    gap: 10px;
+}
+
+.weather_forecast_content_box {
+    height: 100%;
+    min-width: 100px;
+    background-color: #272727;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.weather_forecast_content::-webkit-scrollbar {
+    display: none;
+}

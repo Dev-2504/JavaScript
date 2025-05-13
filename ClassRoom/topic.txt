@@ -1,0 +1,45 @@
+Varibale
+Data types
+Operator
+Conditional Statement
+Looping Statement
+[
+Function
+Arrow Function
+IIFE
+Higer Order Function
+Callback Function
+Anonymouse Function / Function Expression
+]
+Hoisting
+Recursion
+Closer
+
+String & Method
+Arrat & Method
+Array Higer order Method(map,filter,reduce,find,forEach)
+Math & Method
+Date & Method
+
+Spread Operator
+Rest Operator
+Dom
+Event Listener
+Bom
+oop
+Local Storage
+Session
+Cokkie
+
+Exception Handling
+Event Loop
+
+
+SetTimeout
+SetInterval
+Callback
+Promise
+Async & Await
+
+Json
+FetchApi

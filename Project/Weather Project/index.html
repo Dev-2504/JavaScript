@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/Image/favicon/favicon.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Custom Css -->
+     <link rel="stylesheet" href="./assets/style/style.css">
+
+</head>
+<body>
+
+    <!-- Main -->
+     <div class="weather">
+        <!-- Weather Sidebar -->
+        <!-- <div class="weather_sidebar"></div> -->
+        <div class="weather_second">
+
+            <!-- Weather Navbar -->
+            <div class="weather_navbar">
+                <!-- Weather Navbar First -->
+                <div class="weather_navbar_detail">
+                    <p class="text-white">Hi, John</p>
+                    <p class="text-white">Good Morning</p>
+                </div>
+                <!-- Weather Navbar Second -->
+                <div class="weather_navbar_right_box">
+                    <div class="weather_navbar_search_box">
+                        <img src="./assets/Image/navbar/search.png" alt="" height="22px" width="22px">
+                        <form action="" id="form">
+                            <input id="search_btn" type="text" placeholder="Search your location" style="color: #5E5E5E; margin-left: 10px; outline: none;">
+                        </form>
+                    </div>
+                    <div class="weatehr_navbar_profile_box">
+                        <img src="./assets/Image/navbar/profile.jpg" alt="" height="50px" width="50px" style="border-radius: 100px;">
+                        <img src="./assets/Image/location_icon/bottom_arrow.png" alt="" class="ml-[5px]">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weather Content -->
+            <div class="weather_content">
+
+                <!-- Weather Location -->
+                <div class="weather_location weather_all_content">
+                    <!-- Weather Location First -->
+                    <div class="weather_location_first">
+                        <div class="weather_location_detail">
+                            <img src="./assets/Image/location_icon/location_icon.png" alt="">
+                            <p class="ml-[8px]" id="weather_location_area">Dhaka, Bangladesh</p>
+                        </div>
+                        <div class="weather_location_unit">
+                            <img src="./assets/Image/location_icon/Celius.png" alt="">
+                            <img src="./assets/Image/location_icon/bottom_arrow.png" alt="">
+                        </div>
+                    </div>
+                    <!-- Weather Location Second -->
+                    <div class="weather_location_second">
+                        <div class="weather_location_time">
+                            <p class="text-4xl" id="location_Day">Sunday</p>
+                            <p class="text-sm mt-[2px]" id="location_date">04 Aug,2024</p>
+                        </div>
+                        <img src="./assets/Image/location_icon/cloud.png" alt="" class="weather_location_image">
+                        <div class="weather_location_temp">
+                            <div>    
+                                <p class="text-5xl text-white font-medium text-right flex"  id="location_temp">28<img src="./assets/Image/location_icon/fluent--temperature-degree-celsius-48-regular.svg" class="mt-[-2px]"></p>
+                                <p class="text-2xl text-white font-medium flex text-right ml-[45px] mt-[2px]" id="location_temp2">/24 <img src="./assets/Image/location_icon/fluent--temperature-degree-celsius-48-regular (1).svg" alt=""></p>
+                            </div>
+                            <div>
+                                <p class="text-base font-medium text-white text-right" id="location_des">Heavy Rain</p>
+                                <p class="text-sm font-light text-white text-right mt-[2px]" id="location_feel">Feels like 31°</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weather Today Highlights -->
+                <div class="weather_today_highlight weather_all_content">
+                    <!-- Weather Heading -->
+                    <p class="text-white text-2xl font-medium h-[50px]">Today's Highlight</p>
+                    <!-- Weather Content -->
+                    <div class="weather_highlight_content">
+
+                        <!-- Weather Content First Box -->
+                        <div class="weather_highlight_wind weather_highlight_common">
+                            <div class="flex justify-end items-center">
+                                <img src="./assets/Image/highlight_icon/wind.png" alt="" height="20px" width="20px">
+                                <p class="text-white ml-[8px] mt-[5px]">Wind Status</p>
+                            </div>
+                            <p class="text-right text-xl text-white" id="wind_speed">7.90 <span class="text-xs">km/h</p>
+                            <p class="text-right text-white font-light text-sm">9:00 AM</p>
+                        </div>
+
+                        <!-- Weather Content Second Box -->
+                        <div class="weather_highlight_wind weather_highlight_common">
+                            <div class="flex justify-end">
+                                <img src="./assets/Image/highlight_icon/humadity.png" alt="" height="25px" width="25px">
+                                <p class="text-white ml-[8px] mt-[5px]">Humidity</p>
+                            </div>
+                            <p class="text-right text-xl text-white" id="humadity">85<span class="text-xs">%</span></p>
+                            <p class="text-right text-white font-light text-sm">Humidity is good</p>
+                        </div>
+
+                        <!-- Weather Content Third Box -->
+                        <div class="weather_highlight_sunrise weather_highlight_common">
+                            <img src="./assets/Image/highlight_icon/sunrise.png" alt="">
+                            <div>
+                                <p class="text-white text-base font-light">Sunrise</p>
+                                <p class="text-white text-2xl font-semibold" id="sunrise">4:50 AM</p>
+                            </div>
+                        </div>
+
+                        <!-- Weather Content Four Box -->
+                        <div class="weather_highlight_wind weather_highlight_common">
+                            <div class="flex justify-end">
+                                <img src="./assets/Image/highlight_icon/uv_index.png" alt="" height="25px" width="25px">
+                                <p class="text-white ml-[8px] mt-[5px]">UV Index</p>
+                            </div>
+                            <p class="text-right text-xl text-white" id="uv_index">4<span class="text-xs">UV</span></p>
+                            <p class="text-right text-white font-light text-sm">Moderate UV</p>
+                        </div>
+
+                        <!-- Weather Content Five Box -->
+                        <div class="weather_highlight_wind weather_highlight_common">
+                            <div class="flex justify-end">
+                                <img src="./assets/Image/highlight_icon/visibility.png" alt="" width="25px" style="height: 23px;">
+                                <p class="text-white ml-[8px] mt-[5px]">Visibility</p>
+                            </div>
+                            <p class="text-right text-xl text-white" id="visibility">5<span class="text-xs">km</span></p>
+                            <p class="text-right text-white font-light text-sm">9:00 AM</p>
+                        </div>
+
+                        <!-- Weather Content Six Box -->
+                        <div class="weather_highlight_sunrise weather_highlight_common">
+                            <img src="./assets/Image/highlight_icon/sunset.png" alt="">
+                            <div>
+                                <p class="text-white text-base font-light">Sunset</p>
+                                <p class="text-white text-2xl font-semibold" id="sunset">6:45 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weather Other Countries -->
+                <div class="weather_other_countries weather_all_content">
+                    <div class="weather_other_countries_heading">
+                        <p class="text-white text-2xl font-medium h-[50px]">Others Countries</p>
+                        <p class="flex items-center text-white">See All <img src="./assets/Image/location_icon/bottom_arrow.png" alt="" class="ml-[8px]"></p>
+                    </div>
+                    <div class="weather_other_countries_content">
+                        <!-- Box 1 -->
+                        <div class="weather_content_box">
+                            <div class="weather_box_country_detail">
+                                <p class="" style="color: #B9B9B9;">India</p>
+                                <p class="text-2xl text-white font-light">New Delhi</p>
+                                <p class="text-white font-light">Sunny</p>
+                            </div>
+                            <img src="./assets/Image/other_countries/image 8.png" alt="">
+                            <p class="flex items-end text-3xl text-white" id="other_countries_0_box">32° <span class="text-xl font-light">/24°</span></p>
+                        </div>
+                        <!-- Box 2 -->
+                        <div class="weather_content_box">
+                            <div class="weather_box_country_detail">
+                                <p class="" style="color: #B9B9B9;">Japan</p>
+                                <p class="text-2xl text-white font-light">Tokyo</p>
+                                <p class="text-white font-light">Mostly Sunny</p>
+                            </div>
+                            <img src="./assets/Image/other_countries/image 7.png" alt="">
+                            <p class="flex items-end text-3xl text-white" id="other_countries_1_box">30° <span class="text-xl font-light">/19°</span></p>
+                        </div>
+                        <!-- Box 3 -->
+                         <div class="weather_content_box">
+                            <div class="weather_box_country_detail">
+                                <p class="" style="color: #B9B9B9;">Australia</p>
+                                <p class="text-2xl text-white font-light">Canberra</p>
+                                <p class="text-white font-light">Sunny</p>
+                            </div>
+                            <img src="./assets/Image/other_countries/image 8.png" alt="">
+                            <p class="flex items-end text-3xl text-white" id="other_countries_2_box">32° <span class="text-xl font-light">/24°</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weather Forecast -->
+                <div class="weather_forecast weather_all_content">
+                    <p class="text-white text-2xl font-medium h-[50px]">10 Day Forecast</p>
+                    <div class="weather_forecast_content">
+                        <!-- Box 1 -->
+                        <div class="weather_forecast_content_box">
+                            <p class="text-white" id="forecast_first_day">Today</p>
+                            <img src="./assets/Image/Forecast/Rain cloud.png" alt="">
+                            <p class="text-white" id="forecast_first_degree">28°</p>
+                        </div>
+                        <!-- Box 2 -->
+                        <div class="weather_forecast_content_box">
+                            <p class="text-white" id="forecast_second_day">Today</p>
+                            <img src="./assets/Image/Forecast/Rain cloud.png" alt="">
+                            <p class="text-white" id="forecast_second_deg">28°</p>
+                        </div>
+                        <!-- Box 3 -->
+                        <div class="weather_forecast_content_box">
+                            <p class="text-white" id="forecast_third_day">Today</p>
+                            <img src="./assets/Image/Forecast/Rain cloud.png" alt="">
+                            <p class="text-white" id="forecast_third_deg">28°</p>
+                        </div>
+                        <!-- Box 4 -->
+                        <div class="weather_forecast_content_box">
+                            <p class="text-white">Today</p>
+                            <img src="./assets/Image/Forecast/Rain cloud.png" alt="">
+                            <p class="text-white">28°</p>
+                        </div>
+                        <!-- Box 5 -->
+                        <div class="weather_forecast_content_box">
+                            <p class="text-white">Today</p>
+                            <img src="./assets/Image/Forecast/Rain cloud.png" alt="">
+                            <p class="text-white">28°</p>
+                        </div>
+                        <!-- Box 6 -->
+                        <div class="weather_forecast_content_box">
+                            <p class="text-white">Today</p>
+                            <img src="./assets/Image/Forecast/Rain cloud.png" alt="">
+                            <p class="text-white">28°</p>
+                        </div>
+                        <!-- Box 7 -->
+                        <div class="weather_forecast_content_box">
+                            <p class="text-white">Today</p>
+                            <img src="./assets/Image/Forecast/Rain cloud.png" alt="">
+                            <p class="text-white">28°</p>
+                        </div>
+                        <!-- Box 8 -->
+                        <div class="weather_forecast_content_box">
+                            <p class="text-white">Today</p>
+                            <img src="./assets/Image/Forecast/Rain cloud.png" alt="">
+                            <p class="text-white">28°</p>
+                        </div>
+                        <!-- Box 9 -->
+                        <div class="weather_forecast_content_box">
+                            <p class="text-white">Today</p>
+                            <img src="./assets/Image/Forecast/Rain cloud.png" alt="">
+                            <p class="text-white">28°</p>
+                        </div>
+                        <!-- Box 10 -->
+                        <div class="weather_forecast_content_box">
+                            <p class="text-white">Today</p>
+                            <img src="./assets/Image/Forecast/Rain cloud.png" alt="">
+                            <p class="text-white">28°</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+     </div>
+    
+    <!-- Script -->
+     <script src="./assets/Javascript/script.js"></script>
+</body>
+</html>
