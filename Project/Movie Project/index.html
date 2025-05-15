@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#1b1c1f] text-white font-sans p-6" onload="APIData()">
+
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 bg-[#1e1f25] p-6 rounded-2xl shadow-xl">
+    
+    <!-- Left: Poster -->
+    <div class="md:w-1/3" style="border: 1px solid white;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLAgBnAV0bSW3EgmGZoRTu2yTyfDgtsDyYoQ&s" alt="Poster"
+           class="rounded-xl shadow-md"  height="100%" width="100%" id="image"/>
+    </div>
+
+    <!-- Center: Movie Details -->
+    <div class="md:w-2/3 flex flex-col gap-4">
+      
+      <!-- Title -->
+      <h2 class="text-4xl font-bold" id="title">Avatar: The Way of Water</h2>
+
+      <!-- Genres -->
+      <div class="flex flex-wrap gap-3 mt-[20px]">
+        <span class="bg-[#2b2c30] text-sm px-4 py-1 rounded-full">Thriller/Mystery</span>
+        <span class="bg-[#2b2c30] text-sm px-4 py-1 rounded-full">Action</span>
+        <span class="bg-[#2b2c30] text-sm px-4 py-1 rounded-full">Adventure</span>
+        <span class="bg-[#2b2c30] text-sm px-4 py-1 rounded-full">Fantasy</span>
+      </div>
+
+      <!-- Ratings -->
+      <div class="flex items-center gap-4 text-sm mt-1">
+        <span class="bg-yellow-400 text-black px-2 py-0.5 rounded">IMDB</span>
+        <span class="text-gray-300" id="imdb_Rating">7.6 / 10</span>
+        <span class="bg-red-600 px-2 py-0.5 rounded">PG</span>
+        <span class="text-gray-400">13 (13+)</span>
+        <span class="bg-green-700 px-2 py-0.5 rounded text-white">3h 12m</span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-sm text-gray-300 leading-relaxed mt-[15px]" id="des">
+        Jake Sully lives with his newfound family formed on the extrasolar moon Pandora.
+        Once a familiar threat returns to finish what was previously started, Jake must work
+        with Neytiri and the army of the Na'vi race to protect their home.
+      </p>
+
+      <!-- Read More -->
+      <div>
+        <a href="#" class="text-blue-400 text-sm">READ MORE</a>
+        <span class="text-orange-400 ml-1">▼</span>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex gap-4 mt-2">
+        <button class="bg-blue-500 hover:bg-blue-600 px-5 py-2 rounded-full flex items-center gap-2">
+          <span>WATCH TRAILER</span>
+          <span class="text-xl">▶</span>
+        </button>
+        <button class="border border-blue-400 px-5 py-2 rounded-full hover:bg-[#2d3646]">TO WATCHLIST +</button>
+      </div>
+    </div>
+
+    <!-- Right: Cast Info -->
+    <div class="md:w-1/4 flex flex-col gap-4 mt-4 md:mt-0 text-sm">
+      <div>
+        <h3 class="text-gray-400">Director</h3>
+        <p class="text-white" id="director">James Cameron</p>
+      </div>
+      <div class="border-t border-gray-700 pt-3">
+        <h3 class="text-gray-400">Writers</h3>
+        <p class="text-white" id="writer">Rick Jaffa • Amanda Silver</p>
+      </div>
+      <div class="border-t border-gray-700 pt-3">
+        <h3 class="text-gray-400">Stars</h3>
+        <p class="text-white">Zoe Saldana • Rick Jaffa • Sigourney Weaver</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
